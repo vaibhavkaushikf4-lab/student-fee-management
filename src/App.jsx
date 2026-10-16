@@ -2,56 +2,6 @@
 import { useEffect,useState } from "react";
 import "./App.css";
 
-
-const initialStudents = [
-  {
-    id: 1,
-    name: "Aman Sharma",
-    className: "10",
-    email: "aman.sharma@example.com",
-    phone: "9000000001",
-    totalFee: 5000,
-    paidAmount: 3000,
-  },
-  {
-    id: 2,
-    name: "Priya Verma",
-    className: "9",
-    email: "priya.verma@example.com",
-    phone: "9000000002",
-    totalFee: 4000,
-    paidAmount: 4000,
-  },
-  {
-    id: 3,
-    name: "Rahul Patel",
-    className: "10",
-    email: "rahul.patel@example.com",
-    phone: "9000000003",
-    totalFee: 6000,
-    paidAmount: 2500,
-  },
-  {
-    id: 4,
-    name: "Neha Singh",
-    className: "8",
-    email: "neha.singh@example.com",
-    phone: "9000000004",
-    totalFee: 3000,
-    paidAmount: 0,
-  },
-  {
-    id: 5,
-    name: "Rohan Das",
-    className: "9",
-    email: "rohan.das@example.com",
-    phone: "9000000005",
-    totalFee: 5500,
-    paidAmount: 2000,
-  },
-];
-
-
 function getPendingAmount(student) {
   return Math.max(0, student.totalFee - student.paidAmount);
 }
@@ -399,10 +349,6 @@ async function handleRemoveStudent(student) {
 
         <nav className="navigation">
           <div className="nav-item active">▦ Dashboard</div>
-          <div className="nav-item">♙ Students</div>
-          <div className="nav-item">₹ Payments</div>
-          <div className="nav-item">♧ Complaints</div>
-          <div className="nav-item">♧ Notifications</div>
         </nav>
 
         <div className="sidebar-footer">
